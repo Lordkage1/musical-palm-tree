@@ -1,0 +1,13 @@
+#график функции 
+def F(x):
+return a - b*x 
+import numpy as np 
+import matplotlib.pyplot as plt 
+def plot_function(F):
+x=np.linscape(0, a, 2)
+y=list(map(F, x))
+plt.plot(x, y)
+plt.ylabel("P")
+plt.xlabel("Q")
+plot_function(F)
+plt.scatter([P],[F(P)])
